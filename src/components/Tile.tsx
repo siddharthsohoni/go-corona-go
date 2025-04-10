@@ -41,8 +41,6 @@ function Tile({ index, tile, players, movingPlayer, isActive }: TileProps) {
       ? backgroundMap[tile.type]
       : "none";
 
-  const tileColor = tile ? colorMap[tile.type] : "bg-gray-100";
-
   const tileStyle =
     index === 24
       ? {
