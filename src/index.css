@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes modal-appear {
+  0% {
+    transform: scale(0); /* Start small */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: scale(1); /* Full size */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.board-container {
+  height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
