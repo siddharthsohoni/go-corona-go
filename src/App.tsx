@@ -18,6 +18,7 @@ import avatar12 from "./assets/avatars/avatar12.png";
 import avatar13 from "./assets/avatars/avatar13.png";
 import avatar14 from "./assets/avatars/avatar14.png";
 import avatar15 from "./assets/avatars/avatar15.png";
+import bannerImage from './assets/images/bannerBoardGame.png';
 
 const AVATARS = [
   avatar1,
@@ -405,7 +406,7 @@ export default function App() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-50 to-purple-100 p-4">
         <img
-          src="./src/assets/images/banner.png" // Replace with the actual path to your image
+          src={bannerImage} // Replace with the actual path to your image
           alt="Go Corona Go"
           className="w-80 h-auto mb-4"
         />
@@ -462,7 +463,7 @@ export default function App() {
       <div className="relative w-full mb-6">
         {/* Top-Left Banner */}
         <img
-          src="./src/assets/images/bannerBoardGame.png" // Replace with the actual path to your image
+          src={bannerImage} // Replace with the actual path to your image
           alt="Go Corona Go"
           className="absolute top-0 left-0 w-48 h-auto w-16 h-16 rounded-full mx-auto mb-4" // Positioned to the top-left
         />
